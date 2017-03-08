@@ -1,0 +1,9 @@
+<% provide(:title, 'Homepage') %>
+
+<h1>The Idea App</h1>
+
+<% if current_user %>
+  <p>Welcome to the app, <%= current_user.email %>!</p>
+<% else %>
+  <p>Sign in to see ideas!</p>
+<% end %>
